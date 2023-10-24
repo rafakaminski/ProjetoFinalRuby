@@ -1,0 +1,27 @@
+<%= form_with(model: cobrade, local: true) do |form| %>
+  <% if cobrade.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(cobrade.errors.count, "error") %> prohibited this cobrade from being saved:</h2>
+
+      <ul>
+      <% cobrade.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :cod %>
+    <%= form.number_field :cod %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
