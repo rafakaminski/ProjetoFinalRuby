@@ -1,0 +1,18 @@
+<div class="containere">
+  <div class="content">
+    <h1>Bem-Vindo</h1>
+    <!-- <%= link_to 'Cidades', '/cities'%>
+    <%= link_to 'Cidades 2', '/cities'%>
+    <h2>cookie <%= cookies[:teste_C] %></h2>
+    <h2>session <%= session[:teste_S] %></h2> -->
+    <p><%= link_to 'English', '/?locale=en' %> </p>
+    <p><%= link_to 'Português', root_path(locale:"pt-BR") %> </p>
+  </div>
+</div>
+
+<% alert_msg = Time.now.hour < 12 ? "Bom dia" : Time.now < 18 ? "Boa tarde" : "Boa noite"%>
+
+<script>
+$.notify("<%= alert_msg %>", "success");
+console.log("teste");
+</script>

@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cod:</strong>
+  <%= @city.cod %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @city.name %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @city.image %>
+</p>
+
+<td><%= image_tag @city.image , width: 200, height: 200 %></td>
+
+<p>
+    <%= Date.today %>
+</p>
+
+
+<%= br_date(Date.today) %>
+
+<%= link_to 'Edit', edit_city_path(@city) %> |
+<%= link_to 'Back', cities_path %>

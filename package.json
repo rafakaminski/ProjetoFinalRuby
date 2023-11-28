@@ -1,0 +1,13 @@
+{
+  "name": "projetinho",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "materialize-css": "^1.0.0-rc.2"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Vinicios21/RubyOnRails.git",
+  "author": "Guilherme M <guimagioni@gmail.com>",
+  "license": "MIT"
+}
