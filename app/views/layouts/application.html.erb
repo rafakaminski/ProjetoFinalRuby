@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Projetinho</title>
+  <title>ProjetoFinal</title>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
-  
+
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= stylesheet_link_tag params[:controller], media: 'all', 'data-turbolinks-track': 'reload' %>
+
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  
+
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag params[:controller], 'data-turbolinks-track': 'reload' %>
 </head>
@@ -30,17 +31,15 @@
       </ul>
     </div>
   </nav> -->
-
+  
   <body>
-
     <ul>
       <li><a href=<%=root_path%> class="active">Home</a></li>
       <li><%= link_to t('city') , cities_path %></li>
       <li><a href="/states">States</a></li>
       <!-- <li><%= link_to 'English', '/?locale=en' %></li>
       <li><%= link_to 'Português', root_path(locale: "pt-BR") %></li> -->
-    </ul>
-    
+    </ul>  
   </body>
 
   <%= yield %>
